@@ -31,8 +31,7 @@ jobs:
             repository: ${{secrets.DOCKERHUB_REPO}}
             push: true
             tags: trojancodes/flask_inventory:latest
-            # repository: ${{secrets.DOCKERHUB_REPO}}
-            # tag_with_ref: true
+
 
 
  
