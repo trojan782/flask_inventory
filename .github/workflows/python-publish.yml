@@ -30,7 +30,6 @@ jobs:
             # tags: ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
             username: ${{ secrets.DOCKER_HUB_USERNAME }}
             password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-            # repository: ${{secrets.DOCKERHUB_REPO}}
             # push: true
             # tags: trojancodes/flask_inventory:latest
         - name: Build and Push To Docker Image
