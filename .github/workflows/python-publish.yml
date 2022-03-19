@@ -26,12 +26,8 @@ jobs:
         - name: Login TO DockerHub
           uses: docker/login-action@v1
           with:
-            # push: true
-            # tags: ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
             username: ${{ secrets.DOCKER_HUB_USERNAME }}
             password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-            # push: true
-            # tags: trojancodes/flask_inventory:latest
         - name: Build and Push To Docker Image
           id: docker_build
           uses: docker/build-push-action@v2
